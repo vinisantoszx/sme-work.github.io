@@ -1,0 +1,185 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
+/* carrossel de imagens */
+.carossel {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
+    height: 400px;
+}
+.carossel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carossel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.carossel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+.carossel-control.prev {
+    left: 0;
+}
+.carossel-control.next {
+    right: 0;
+}
+
+/* cards de serviços */
+.text-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+
+    background-color: #eee;
+
+}
+
+.text-services h1 {
+    font-size: 20px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.cards-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 20vh;
+
+    background-color: #eee;
+}
+
+.card {
+    width: 250px;
+    height: 120px;
+    padding: 20px;
+    text-align: center;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+    
+
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+
+    background-color: #9acd32;
+    color: #fff;
+
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+
+}
+
+.btn:hover {
+    background-color: #689411;
+}
+
+/* Mais info */
+.text-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+
+    background-color: #ffffff;
+
+}
+
+.text-info h1 {
+    font-size: 20px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    
+    overflow: hidden;
+
+}
+
+.card-info {
+    width: 30vw;
+    height: 100%;
+    margin: 0 40px;
+
+    background-color: #007BFF;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.card-info img {
+    object-fit: cover;
+    width: 30vw;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.content h2 {
+    font-size: 20px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}

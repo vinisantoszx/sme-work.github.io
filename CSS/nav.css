@@ -1,0 +1,178 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  height: 15vh;
+  border-bottom: #9acd32 2px solid;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.link-nav {
+  color: #9acd32;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-nav:hover {
+  opacity: 0.7;
+}
+
+.image-logo {
+  height: 10vh;
+  transition: 0.3s;
+}
+
+.image-logo:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #9acd32;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #fff;
+    border-left: #9acd32 solid 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 999;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.dropdown-menu{
+  display: none;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #333;
+}
+
+.menu > li > a:hover {
+  background-color: #555;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu > li > a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.submenu > li > a:hover {
+  background-color: #666;
+}
+
+.submenu .submenu {
+  top: 0;
+  left: 100%;
+}
+
+.menu > li:hover .submenu {
+  display: block;
+} */
