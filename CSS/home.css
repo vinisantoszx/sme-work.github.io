@@ -9,15 +9,18 @@
     overflow: hidden;
     height: 400px;
 }
+
 .carossel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .carossel-inner img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
+
 .carossel-control {
     position: absolute;
     top: 50%;
@@ -29,11 +32,35 @@
     padding: 10px;
     z-index: 1;
 }
+
 .carossel-control.prev {
     left: 0;
 }
+
 .carossel-control.next {
     right: 0;
+}
+
+.carossel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carossel-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carossel-indicator.active {
+    background-color: #9acd32;
 }
 
 /* cards de serviços */
@@ -42,7 +69,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 8vh;
+    height: 55px;
 
     background-color: #eee;
 
@@ -60,7 +87,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    height: 20vh;
+    height: 200px;
 
     background-color: #eee;
 }
@@ -74,7 +101,6 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .card h3 {
@@ -94,7 +120,6 @@
     margin-bottom: 20px;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-
 }
 
 .btn {
@@ -111,7 +136,6 @@
     text-transform: uppercase;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
-
 }
 
 .btn:hover {
@@ -127,7 +151,6 @@
     height: 8vh;
 
     background-color: #ffffff;
-
 }
 
 .text-info h1 {
@@ -143,25 +166,24 @@
     height: 300px;
     
     overflow: hidden;
-
 }
 
 .card-info {
-    width: 30vw;
-    height: 100%;
+    width: 100vw;
+    height: 300px;
     margin: 0 40px;
-
-    background-color: #007BFF;
 
     box-sizing: border-box;
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
-.card-info img {
-    object-fit: cover;
-    width: 30vw;
-    height: 300px;
-    border-radius: 10px;
+.card-info iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove a borda padrão do iframe */
+    display: block; /* Remove o espaço em branco abaixo do iframe */
 }
 
 .content {
@@ -175,7 +197,6 @@
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
-
 }
 
 .content p {

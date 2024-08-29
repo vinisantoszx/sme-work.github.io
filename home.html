@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 
     <!-- FONTES E LINKS EXTERNOS -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -62,9 +63,13 @@
                 <img src="https://via.placeholder.com/1200x100?text=Imagem+1" alt="Imagem 1">
                 <img src="https://via.placeholder.com/1200x100?text=Imagem+2" alt="Imagem 2">
                 <img src="https://via.placeholder.com/1200x100?text=Imagem+3" alt="Imagem 3">
+                <img src="https://via.placeholder.com/1200x100?text=Imagem+4" alt="Imagem 4">
+                <img src="https://via.placeholder.com/1200x100?text=Imagem+5" alt="Imagem 5">
+                <img src="https://via.placeholder.com/1200x100?text=Imagem+6" alt="Imagem 6">
             </div>
             <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
             <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="carossel-indicators"></div> <!-- MARCADORES -->
         </div>
 
         <!-- CARDS SERVIÇOS -->
@@ -73,14 +78,14 @@
         </div>
 
         <div class="cards-services">
-            <!-- Card de Contracheque -->
+            <!-- CARD DE CONTRACHEQUE -->
             <div class="card">
                 <h3>Contracheque</h3>
                 <p>Acesse o seu contracheque online de forma rápida e segura.</p>
                 <a href="https://www.sstransparenciamunicipal.net/ssfolha/sisfo_login.php?entcod=257" class="btn">Acessar Contracheque</a>
             </div>
     
-            <!-- Card de Contato -->
+            <!-- CARD DE CONTATO -->
             <div class="card">
                 <h3>Ouvidoria</h3>
                 <p>Precisa de ajuda? Fale conosco através de nossos canais de atendimento.</p>
@@ -89,19 +94,87 @@
         </div>
         
         <!-- MAIS INFOS -->
-         <div class="text-info">
+        <div class="text-info">
             <h1>Mais informações</h1>
-         </div>
-         <div class="container">
+        </div>
+        <div class="container">
             <div class="card-info">
-                <img src="https://via.placeholder.com/1200x100?text=Imagem+1" alt="">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.58478907816723!2d-39.621186554431915!3d-4.529630059247129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be485cace14ea5%3A0x7ad0fd06c9d738b2!2sSecretaria%20de%20Educa%C3%A7%C3%A3o%20de%20Itatira!5e0!3m2!1spt-BR!2sbr!4v1724952787196!5m2!1spt-BR!2sbr" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
             </div>
             <div class="content">
                 <h2>Para uma educação cada vez melhor!</h2>
                 <p>A nossa empresa tem a responsabilidade de elaborar o Plano Municipal de Educação, que deve incluir as bases e diretrizes da educação municipal, conforme a legislação vigente. Além disso, comprometemo-nos a desenvolver normas pedagógicas específicas para o ensino fundamental, especial e infantil, alinhadas com as diretrizes e programas gerais estabelecidos para o sistema municipal de educação.</p>
             </div>
         </div>
+
+        <!-- <footer class="footer-container">
+            <div class="footer-contact">
+                <h2>Contato</h2>
+                <p>Endereço: Rua Exemplo, 123, Cidade, Estado, País</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <p>Email: contato@empresa.com</p>
+                <p>Horário de Atendimento: Segunda a Sexta, 9h - 18h</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#blog">Blog</a>
+                <a href="#faq">FAQ</a>
+                <a href="#privacidade">Política de Privacidade</a>
+                <a href="#termos">Termos de Serviço</a>
+            </div>
+    
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+
+            <p>&copy; 2024 <a href="https://github.com/vinisantoszx">vinisantoszx</a>. Todos os direitos reservados.</p>
+        </footer> -->
+
+        <footer>
+            <div class="footer-container">
+                <!-- Coluna de Contato -->
+                <div class="footer-column">
+                    <h2>Contato</h2>
+                    <p>Endereço: Rua Antônio Alves Guerra, S/N, Itatira-CE</p>
+                    <p>Telefone: (88) 3436-</p>
+                    <p>CNPJ: 06.086.082/0001-15</p>
+                    <p>Email: educ@educ.itatira.ce.gov.br</p>
+                    <p>Horário de Atendimento: Segunda a Sexta, 8h - 16h</p>
+                </div>
+    
+                <!-- Coluna de Links e Redes Sociais -->
+                <div class="footer-column">
+                    <h2>Links Rápidos</h2>
+                    <p><a href="#blog">Blog</a></p>
+                    <p><a href="#faq">FAQ</a></p>
+                    <p><a href="#privacidade">Política de Privacidade</a></p>
+                    <p><a href="#termos">Termos de Serviço</a></p>
+    
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 <a href="https://github.com/vinisantoszx">vinisantoszx</a>. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
+            </div>
+        </footer>
+
     </main>
+
 </body>
 
 <!-- SCRIPTS - HOME-->
