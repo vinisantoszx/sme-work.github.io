@@ -1,12 +1,12 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha os cards no centro horizontalmente */
-    width: 1200px; /* Define a largura do container dos cards */
+    align-items: center;
+    width: 1200px;
 }
 
 .full-box{
-    padding: 10px 30px;
+    padding: 10px 100px;
 }
 
 .full-width-card {

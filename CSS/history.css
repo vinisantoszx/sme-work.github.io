@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    flex-direction: column;
+    
+}
+.text-services {
+    margin-top: 20px;
+}
+
+.text-services h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.text-services p {
+    font-size: 16px;
+    margin: 10px 20px 10px 20px;
+    text-align: justify;
+    
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+ul.checklist {
+    margin: 10px 20px;
+
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+
+    background-color: #9acd32;
+    border-radius: 50%;
+
+    margin-right: 10px;
+}   
+
+.checkmark:hover {
+    background-color: #9acd32;
+
+}
+
+.checkmark::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white; /* Cor do ponto de verificação */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

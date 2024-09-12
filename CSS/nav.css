@@ -69,10 +69,11 @@ main {
     position: absolute;
     top: 15vh;
     right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #fff;
-    border-left: #9acd32 solid 2px;
+    width: 100vw;
+    height: 50vh;
+    background: #fcfcfc;
+    border-bottom: #9acd32 2px solid;
+    padding-bottom: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
