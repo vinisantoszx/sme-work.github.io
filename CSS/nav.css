@@ -85,7 +85,7 @@ main {
     align-items: center;
     justify-content: space-around;
     transform: translateY(-130%);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.4s ease-in;
     z-index: 99;
   }
   .nav-list li {
@@ -108,7 +108,7 @@ main {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;

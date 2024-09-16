@@ -224,7 +224,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     .cards-services {
         height: 360px;
         gap: 20px;
