@@ -15,6 +15,8 @@ body {
   background: #ffffff;
   
   border-bottom: #9acd32 2px solid;
+
+  z-index: 1000;
 }
 
 main {
@@ -84,7 +86,7 @@ main {
     justify-content: space-around;
     transform: translateY(-130%);
     transition: transform 0.3s ease-in;
-    z-index: 1;
+    z-index: 99;
   }
   .nav-list li {
     margin-left: 0;
