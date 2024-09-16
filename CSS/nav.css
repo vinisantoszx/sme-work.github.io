@@ -1,14 +1,21 @@
 /* site desenvolvido por VINICIUS SANTOS */
 /* entre em contato por @vinisantoszx*/
+body {
+  overflow-x: hidden;
+}
 
 .main-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+  height: 15vh;
+  overflow-x: hidden;
+
+
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #ffffff;
-  height: 15vh;
+  
+
   border-bottom: #9acd32 2px solid;
 }
 
@@ -71,6 +78,7 @@ main {
     right: 0;
     width: 100vw;
     height: 50vh;
+    overflow-x: hidden;
     background: #fcfcfc;
     border-bottom: #9acd32 2px solid;
     padding-bottom: 20px;
