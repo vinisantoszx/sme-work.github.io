@@ -33,6 +33,13 @@
     background-color: #cb7246;
 }
 
+.card-header h2 {
+    font-size: 18px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
 .card-body {
     padding: 15px;
     max-height: 0;
@@ -41,8 +48,19 @@
     overflow: hidden;
 }
 
-.card-body h1 {
+.card-body h2 {
+    font-size: 18px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
+}
+
+.card-body p {
+    font-size: 16px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+    margin: 6px 0px;
 }
 
 .card-body.expanded {

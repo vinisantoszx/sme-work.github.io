@@ -9,8 +9,8 @@ main {
 
 .text-services h2 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
     font-size: 20px;
 
@@ -42,10 +42,11 @@ ul.checklist li {
 }
 
 .checkmark {
-    display: inline-block;
-    position: relative;
     width: 16px;
     height: 16px;
+
+    display: inline-block;
+    position: relative;
 
     background-color: #9acd32;
     border-radius: 50%;
@@ -55,18 +56,20 @@ ul.checklist li {
 
 .checkmark:hover {
     background-color: #9acd32;
-
 }
 
 .checkmark::after {
-    content: '';
-    display: block;
     width: 8px;
     height: 8px;
-    border-radius: 50%;
-    background-color: white; /* Cor do ponto de verificação */
+
     position: absolute;
+    content: '';
+    display: block;
+    border-radius: 50%;
+    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    background-color: white;
 }
