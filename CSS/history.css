@@ -1,8 +1,12 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
 main {
     display: flex;
     flex-direction: column;
     
 }
+
 .text-services {
     margin-top: 20px;
 }

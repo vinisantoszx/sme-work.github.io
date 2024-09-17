@@ -1,3 +1,21 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
+.text-services {
+    background-color: #fff;
+}
+
+.text-services h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
 .container {
     width: 100%;
     height: auto;

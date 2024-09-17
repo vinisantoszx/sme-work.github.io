@@ -6,7 +6,7 @@
     <title>Secretaria Municipal de Educação - Itatira</title>
 
     <!-- CSS E RESET -->
-    <link rel="stylesheet" href="CSS/home.css">
+     <link rel="stylesheet" href="CSS/school_units.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/footer.css">
@@ -18,6 +18,7 @@
      
 </head>
 <body>
+
     <!-- MENU DE NAVEGAÇÃO - DESKTOP/MOBILE -->
     <nav class="main-menu">
         <a href="index.html"><img src="https://www.itatira.ce.gov.br/imagens/logo.png?v=2.0" alt="logo-sme" class="image-logo"></a>
@@ -29,33 +30,181 @@
         <ul class="nav-list">
             <li><a href="index.html" class="link-nav">Início</a></li>
             <li><a href="history.html" class="link-nav">História</a></li>
-            <li class="dropdown-departaments">
-                <a href="departaments.html" class="link-nav">Departamentos</a>
-                <div class="dropdown-menu">
-                    <a href="DEPARMENTS/sec_executiva.html">SECRETÁRIA EXECUTIVA</a>
-                    <a href="DEPARMENTS/depar_adm_finan.html">DEPARTAMENTO ADMINISTRATIVO E FINANCEIRO</a>
-                    <a href="DEPARMENTS/depar_ens_infan.html">DEPARTAMENTO DE ENSINO INFANTIL</a>
-                    <a href="DEPARMENTS/depar_ens_fund.html">DEPARTAMENTO DE ENSINO FUNDAMENTAL</a>
-                    <a href="DEPARMENTS/depar_educ_basica.html">DEPARTAMENTO DE EDUCAÇÃO BÁSICA</a>
-                    <a href="DEPARMENTS/depar_pedag.html">DEPARTAMENTO PEDAGÓGICO</a>
-                    <a href="DEPARMENTS/depar_projects.html">DEPARTAMENTO DE PROGRAMAS, PROJETOS E ADMINISTRAÇÃO</a>
-                </div>
-            </li>
+            <li><a href="departaments.html" class="link-nav">Departamentos</a></li>
             <li><a href="programs.html" class="link-nav"><p>Programas</p></a></li>
             <li><a href="school_units.html" class="link-nav"><p>Unidades Escolares</p></a></li>
-            <li><a href="ordinances_laws.html" class="link-nav"><p>Portarias e Leis</p></a></li>
+            <!-- <li><a href="ordinances_laws.html" class="link-nav"><p>Portarias e Leis</p></a></li>
             <li class="dropdown-advice">
                 <a href="advice.html" class="link-nav"><p>Conselhos</p></a>
                 <div class="dropdown-menu">
                     <a href="">CONSELHO MUNICIPAL DE ACOMPANHAMENTO E CONTROLE SOCIAL DO FUNDEB</a>
                     <a href="">CONSELHO MUNICIPAL DE ALIMENTAÇÃO ESCOLAR</a>
                 </div>
-            </li>
+            </li> -->
         </ul>
     </nav>
     
+    <!-- PÁGINA - UNIDADES ESCOLARES -->
     <main>
-        <h1>Unidades Escolares</h1>
+        <!-- TEXTO - ESCOLAS -->
+        <div class="text-services">
+            <h1>Unidades Escolares</h1>
+        </div>
+
+        <!-- CARDS - ESCOLAS -->
+        <div class="full-box">
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Conselho Municipal de Acompanhamento e Controle Social do FUNDEB</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+    
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Conselho Municipal de Alimentação Escolar</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+    
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Secretaria Executiva</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Subdivisão</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Assessoria de Educação Básica</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+    
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Departamento Administrativo e Financeiro</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+    
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Departamento de Ensino Infantil</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Subdivisão:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+    
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Departamento de Ensino Fundamental</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Subdivisão:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+    
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Departamento de Educação Básica</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Subdivisão:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Departamento Pedagógico</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Subdivisão:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+
+            <div class="full-width-card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h2>Departamento de Programas, Projetos e Administração</h2>
+                </div>
+                <div class="card-body" id="cardBody">
+                    <h2>Função:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Subdivisão:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Responsável por setor:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                    <h2>Contatos:</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, est repellat vitae perspiciatis quod inventore sint officia nulla omnis voluptate incidunt deserunt mollitia ullam culpa similique dolores facere placeat illum.</p>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <div class="footer-container">
@@ -93,5 +242,8 @@
         </footer>
         
     </main>
+
 </body>
+<!-- SCRIPTS - SCHOOL_UNITS -->
+<script src="JS/toggle-card.js"></script>
 </html>
