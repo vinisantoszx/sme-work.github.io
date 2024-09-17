@@ -17,13 +17,6 @@
     z-index: 1000;
 }
 
-main {
-    height: 80vh;
-
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-}
-
 .nav-list {
     list-style: none;
     display: flex;

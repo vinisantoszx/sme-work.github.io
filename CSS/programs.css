@@ -1,39 +1,41 @@
 .container {
-    margin-top: 20px;
+    width: 100%;
+    height: auto;
+
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 60px;
-    width: 100%;
-    height: 900px;
     justify-content: center;
+    align-items: center;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 60px;
 }
 
 .card {
     width: 300px;
     height: 350px;
+
+    position: relative;
     text-align: center;
-
-
-    background-color: #eee;
     border-radius: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s ease-in-out;
     overflow: hidden;
 
-    transition: 0.3s;
+    background-color: #eee;
 }
 
 .card:hover {
     background-color: #d2dcbe;
-
-    transition: 0.3s;
 }
 
 .card img {
     width: 100%;
     height: auto;
-    display: block;
 
+    display: block;
     border-radius: 2%;
 }
 
@@ -42,5 +44,42 @@
     font-size: 16px;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
     color: #333;
+}
+
+.expandable-content {
+    display: none;
+    padding: 10px;
+
+    font-size: 14px;
+}
+
+.card.expanded {
+    transform: scale(1.1);
+    z-index: 1;
+    height: 450px;
+}
+
+.card.expanded .expandable-content {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        height: auto;
+
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 999px) {
+    .container {
+        height: auto;
+
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        padding-top: 40px;
+    }
 }
