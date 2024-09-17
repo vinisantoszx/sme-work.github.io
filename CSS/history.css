@@ -5,6 +5,7 @@ main {
     display: flex;
     flex-direction: column;
     
+    overflow-x: hidden;
 }
 
 .text-services {
@@ -28,6 +29,25 @@ main {
     text-align: justify;
     
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.img-history {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-history img {
+    max-width: 60%;
+    max-height: auto;
+
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
 }
 
 ul.checklist {
@@ -76,4 +96,16 @@ ul.checklist li {
     transform: translate(-50%, -50%);
 
     background-color: white;
+}
+
+
+@media (max-width: 999px) {
+    .img-history {
+        height: auto;
+    }
+    
+    .img-history img {
+        max-width: 90%;
+        max-height: auto;
+    }
 }
