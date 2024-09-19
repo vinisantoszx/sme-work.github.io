@@ -32,22 +32,18 @@ main {
 }
 
 .img-history {
-    width: 100vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .img-history img {
-    max-width: 60%;
-    max-height: auto;
-
-    border: 2px solid #fcfcfc;
-    border-radius: 10px;
+    width: 20vw; /* Tamanho das imagens */
+    height: auto; /* Mantém a proporção */
+    margin: 10px 5px; /* Espaço entre as imagens */
 }
 
 ul.checklist {
@@ -98,14 +94,14 @@ ul.checklist li {
     background-color: white;
 }
 
-
 @media (max-width: 999px) {
     .img-history {
-        height: auto;
+        flex-direction: column; /* Alinha as imagens em coluna */
+        align-items: center; /* Centraliza as imagens */
     }
-    
+
     .img-history img {
-        max-width: 90%;
-        max-height: auto;
+        width: 80%; /* Tamanho das imagens na coluna */
+        margin: 10px 0; /* Espaço entre as imagens */
     }
 }

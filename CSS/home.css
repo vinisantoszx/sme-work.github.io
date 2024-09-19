@@ -1,7 +1,7 @@
 /* site desenvolvido por VINICIUS SANTOS */
 /* entre em contato por @vinisantoszx*/
 
-/* carrossel de imagens */
+/* CARROSSEL - DESKTOP */
 .carossel {
     width: 100%;
     height: 400px;
@@ -72,7 +72,7 @@
     background-color: #9acd32;
 }
 
-/* cards de serviços */
+/* CARDS DE SERVIÇOS */
 .text-services {
     width: 100%;
     height: 55px;
@@ -82,7 +82,6 @@
     align-items: center;
 
     background-color: #eee;
-
 }
 
 .text-services h1 {
@@ -154,7 +153,7 @@
     background-color: #689411;
 }
 
-/* Mais info */
+/* MAIS INFO */
 .text-info {
     width: 100%;
     height: 8vh;
@@ -219,10 +218,13 @@
 .content p {
     margin-top: 10px;
     font-size: 16px;
+    text-align: justify;
+
+
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
-/* Tablet (768px e abaixo) */
+/* RESPONSIVIDADE - MOBILE*/
 @media (max-width: 999px) {
     .nav-list {
         display: none;
