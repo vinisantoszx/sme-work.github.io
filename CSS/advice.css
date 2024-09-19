@@ -33,7 +33,7 @@
 
 .full-width-card {
     width: 100%;
-    height: 400px;
+    height: auto;
 
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -82,4 +82,64 @@
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 
     margin: 6px 0px;
+}
+
+@media (max-width: 700px) {
+    .full-width-card {
+        width: 100%;
+        height: auto;
+    
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        transition: max-height 0.3s ease;
+    
+        overflow: hidden;
+    
+        background-color: #fff;
+    }
+    
+    .card-header {
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+    
+        background-color: #cb7246;
+    }
+    
+    .card-header h2 {
+        font-size: 18px;
+    
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+        font-weight: bolder;
+    }
+    
+    .card-body {
+        padding: 15px;
+
+        transition: max-height 0.3s ease;
+    
+        overflow: hidden;
+    }
+    
+    .card-body h2 {
+        font-size: 18px;
+    
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+        font-weight: bolder;
+    }
+    
+    .card-body p {
+        font-size: 16px;
+    
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    
+        margin: 6px 0px;
+    }
+    
+    .card-body.expanded {
+        max-height: 600px;
+    }
 }
