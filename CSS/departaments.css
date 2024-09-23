@@ -62,7 +62,7 @@
 
 .card-body {
     padding: 15px;
-    max-height: 0;
+    max-height: 10px;
     transition: max-height 0.3s ease;
 
     overflow: hidden;
