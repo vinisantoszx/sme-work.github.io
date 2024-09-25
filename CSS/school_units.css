@@ -29,8 +29,8 @@
 
 .full-box {
     display: flex;
-    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha */
-    justify-content: space-between; /* Espaçamento entre os cards */
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px 20px;
 }
 
