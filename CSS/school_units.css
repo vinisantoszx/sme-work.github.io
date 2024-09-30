@@ -39,7 +39,7 @@
 }
 
 .full-width-card {
-    width: calc(33.33% - 20px); /* Ajusta a largura dos cards */
+    width: 100%; /* Ajusta a largura dos cards */
 
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -104,6 +104,10 @@
 
 .card-body.expanded {
     max-height: 500px;
+}
+
+#box-hidden {
+    visibility: hidden;
 }
 /* FIM - CARDS ESCOLAS */
 
