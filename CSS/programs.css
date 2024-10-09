@@ -76,11 +76,15 @@
 .card.expanded {
     transform: scale(1.1);
     z-index: 1;
-    height: 450px;
+    height: auto;
 }
 
 .card.expanded .expandable-content {
     display: block;
+}
+
+.expandable-content p {
+    text-align: justify;
 }
 
 @media (max-width: 1200px) {
