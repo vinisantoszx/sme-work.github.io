@@ -1,6 +1,8 @@
 /* site desenvolvido por VINICIUS SANTOS */
 /* entre em contato por @vinisantoszx*/
 
+/* FINALIZADO DIA 15/10/2024 */
+
 .text-services {
     background-color: #fff;
 }
@@ -72,6 +74,18 @@
 
     font-size: 14px;
 }
+
+.expandable-content p {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card-expandable.expanded .expandable-content p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .card.expanded {
     transform: scale(1.1);
