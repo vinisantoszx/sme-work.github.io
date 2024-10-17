@@ -87,3 +87,12 @@
 .card-body.expanded {
     max-height: 500px;
 }
+
+#bold {
+    font-size: 16px;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+
+    line-height: 1.5;
+}
