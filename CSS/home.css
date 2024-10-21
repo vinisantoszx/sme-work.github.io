@@ -182,9 +182,9 @@
 }
 
 .card-info {
-    width: 150vw;
+    width: 100vw;
     height: 300px;
-    margin: 0 40px;
+    margin: 0 20px 0px 60px;
 
     box-sizing: border-box;
     border-radius: 10px;
@@ -211,14 +211,12 @@
 .content h2 {
     font-size: 20px;
 
-    margin-left: 40px;
-
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 }
 
 .content p {
-    padding: 0px 40px 10px 40px;
+    padding: 0px 40px 10px 0px;
     margin-top: 10px;
 
     font-size: 16px;
