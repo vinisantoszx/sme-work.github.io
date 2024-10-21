@@ -107,3 +107,16 @@ ul.checklist li {
         margin: 10px 0; /* Espaço entre as imagens */
     }
 }
+
+@media (max-width: 659px) {
+    .text-services {
+        margin: 20px -40px 0px -40px;
+    }
+
+    ul.checklist {
+        margin: 10px 60px;
+    
+        list-style-type: none;
+        padding: 0;
+    }
+}

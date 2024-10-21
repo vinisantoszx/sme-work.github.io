@@ -77,7 +77,9 @@
 
 .card-body p {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.25;
+
+    text-align: justify;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 
@@ -95,4 +97,10 @@
     font-weight: 600;
 
     line-height: 1.5;
+}
+
+@media (max-width: 659px) {
+    .full-box {
+        padding: 10px 20px;
+    }
 }
