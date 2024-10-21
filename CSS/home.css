@@ -182,9 +182,9 @@
 }
 
 .card-info {
-    width: 100vw;
+    width: 150vw;
     height: 300px;
-    margin: 0 20px 0px 60px;
+    margin: 0 40px;
 
     box-sizing: border-box;
     border-radius: 10px;
@@ -209,15 +209,17 @@
 }
 
 .content h2 {
-    font-size: 20px;
+    font-size: 24px;
+
+    margin-left: 40px;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 }
 
 .content p {
-    padding: 0px 40px 10px 0px;
     margin-top: 10px;
+    padding: 0px 40px 10px 40px;
 
     font-size: 16px;
     text-align: justify;
@@ -252,9 +254,21 @@
 
         flex-direction: column;
     }
+    
+    .container {
+        height: 400px;
+    }
 
     .card {
         width: 300px;
         height: 120px;
+    }
+
+    .content p {
+        padding: 0px 20px 10px 20px;
+    }
+
+    .content h2 {
+        margin-left: 20px;
     }
 }
