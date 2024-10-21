@@ -85,7 +85,7 @@
 }
 
 .text-services h1 {
-    font-size: 20px;
+    font-size: 24px;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
@@ -166,14 +166,14 @@
 }
 
 .text-info h1 {
-    font-size: 20px;
+    font-size: 24px;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 }
 
 .container {
-    width: 100%;
+    padding: 10px 80px 10px 80px;
     height: 300px;
 
     display: flex;
@@ -182,7 +182,7 @@
 }
 
 .card-info {
-    width: 100vw;
+    width: 150vw;
     height: 300px;
     margin: 0 40px;
 
@@ -209,7 +209,7 @@
 }
 
 .content h2 {
-    font-size: 20px;
+    font-size: 24px;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
@@ -220,6 +220,7 @@
     font-size: 16px;
     text-align: justify;
 
+    line-height: 1.25;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
