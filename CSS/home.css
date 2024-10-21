@@ -256,12 +256,16 @@
     }
     
     .container {
-        height: 400px;
+        height: auto;
     }
 
     .card {
         width: 300px;
         height: 120px;
+    }
+
+    .card-info {
+        height: 200px;
     }
 
     .content p {
