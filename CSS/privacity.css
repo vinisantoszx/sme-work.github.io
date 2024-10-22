@@ -16,6 +16,8 @@
     font-weight: bolder;
 }
 
+
+
 .text-services {
     margin-top: 20px;
 }
@@ -41,7 +43,17 @@
 }
 
 @media (max-width: 659px) {
-    .text-services {
-        margin: 20px -40px 0px -40px;
+    .text-services li{
+        margin: 10px 40px;
+    }
+
+    .text-services p {
+        margin: 10px 40px;
+    }
+
+    .text-services h4 {
+        margin: 10px 0px;
+
+        font-weight: 500;
     }
 }
