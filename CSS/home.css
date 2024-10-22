@@ -248,6 +248,16 @@
 }
 
 @media (max-width: 659px) {
+    .carossel {
+        height: auto;
+    }
+
+    .carossel-inner img {
+        height: 200px;
+
+        object-fit: fit;
+    }
+
     .cards-services {
         height: 360px;
         gap: 20px;
