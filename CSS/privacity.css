@@ -5,11 +5,6 @@
 
 /* INÍCIO - POLÍTICA DE PRIVACIDADE */
 
-html {
-    background-color: lightblue; /* Cor do fundo por trás do body */
-    height: 100%;
-}
-
 .text-services h2 {
     display: flex;
     justify-content: center;
@@ -43,4 +38,10 @@ html {
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: 600;
+}
+
+@media (max-width: 659px) {
+    .text-services {
+        margin: 20px -40px 0px -40px;
+    }
 }
