@@ -5,6 +5,11 @@
 
 /* INÍCIO - POLÍTICA DE PRIVACIDADE */
 
+html {
+    background-color: lightblue; /* Cor do fundo por trás do body */
+    height: 100%;
+}
+
 .text-services h2 {
     display: flex;
     justify-content: center;
