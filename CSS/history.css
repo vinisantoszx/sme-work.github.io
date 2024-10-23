@@ -37,15 +37,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+    flex-wrap: wrap;
+
     margin-top: 10px;
     margin-bottom: 10px;
+
+    background-color: #eee;
 }
 
 .img-history img {
-    width: 20vw; /* Tamanho das imagens */
-    height: auto; /* Mantém a proporção */
-    margin: 10px 5px; /* Espaço entre as imagens */
+    width: 23vw;
+    height: auto;
+    margin: 10px 5px;
 }
 
 ul.checklist {
@@ -118,5 +121,10 @@ ul.checklist li {
     
         list-style-type: none;
         padding: 0;
+    }
+
+    .img-history img {
+        width: 70%; /* Tamanho das imagens na coluna */
+        margin: 10px 0; /* Espaço entre as imagens */
     }
 }
