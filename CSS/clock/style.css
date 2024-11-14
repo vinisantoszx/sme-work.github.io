@@ -1,11 +1,38 @@
 .timer {
   font-family: "Roboto";
   margin: auto;
+
+  height: 200px;
+
+  background-color: #9acd32;
 }
 
 .timer .flipdown {
   margin: auto;
   text-align: center;
+}
+
+.img-event {
+  margin-top: 10px;
+
+  width: 80px;
+}
+
+.pos-img-event {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.pos-img-event p {
+  font-size: 24px;
+
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+
+  margin-right: 10px;
 }
 
 .flipdown.flipdown__theme-dark .rotor-group-heading:before {
@@ -28,4 +55,25 @@
 
 .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before, .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after {
   background-color: #fff;
+}
+
+@media (max-width: 999px) {
+  .timer {
+    font-family: "Roboto";
+    margin: auto;
+  
+    height: 160px;
+  
+    background-color: #9acd32;
+  }
+
+  .img-event {
+    width: 50px;
+  }
+
+  .pos-img-event p {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    
+    font-size: 20px;
+  }
 }
