@@ -153,6 +153,52 @@
     background-color: #689411;
 }
 
+/* Quadro de Aniversariantes */
+.birthday-board {
+    width: 280px;
+    background: #fdf7e3;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #ffcb77;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cabeçalho do Quadro */
+.birthday-header {
+    background: linear-gradient(90deg, #ffcb77, #f4a261);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Lista de Aniversariantes */
+.birthday-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #444;
+    font-size: 1em;
+    line-height: 1.8;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.birthday-list li {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.birthday-list strong {
+    color: #f4a261;
+}
+
 /* MAIS INFO */
 .text-info {
     width: 100%;
@@ -174,7 +220,7 @@
 
 .container {
     width: 100%;
-    height: 300px;
+    height: auto;
 
     display: flex;
     
