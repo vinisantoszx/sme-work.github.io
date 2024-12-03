@@ -160,6 +160,7 @@
 
     display: flex;
     flex-wrap: wrap;
+    
     justify-content: center;
     gap: 20px;
 }
@@ -173,7 +174,7 @@
     position: relative;
     overflow: hidden;
 
-    margin: 20px 40px;
+    margin: 20px 40px 0px 40px;
     padding: 20px;
 
     background: #eee;
@@ -219,20 +220,23 @@
 }
 
 .birthday-list strong {
-    color: #689411; /* Verde mais escuro para destaque */
+    color: #689411;
 }
 
 /* Carrossel de Gestão */
 .carrossel-container {
     width: 100%;
-    max-width: 600px; /* Largura máxima do carrossel */
+    max-width: 600px;
+
     overflow: hidden;
     margin-top: 20px;
+
     position: relative;
+
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    flex-grow: 1; /* Faz o carrossel crescer proporcionalmente */
+    flex-grow: 1;
 }
 
 .carrossel-gestao {
@@ -242,8 +246,8 @@
 }
 
 .carrossel-gestao img {
-    width: 100%; /* Ajusta a imagem ao tamanho do carrossel */
-    height: 400px; /* Altura fixa para as imagens */
+    width: 100%;
+    height: 400px;
     object-fit: cover;
 }
 
