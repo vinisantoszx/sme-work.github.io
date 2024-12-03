@@ -93,24 +93,7 @@
                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTFFHrwDbQWRPmDVtWFSJdfXrBZnrrdVBFHBwlDzVGhfphGrwfgRRSpwGdjHJxtBbktRxJ" class="btn" target="_blank">Entrar em Contato</a>
             </div>
         </div>
-
-        <!-- ANIVERSÁRIOS E  -->
-        <div class="text-info">
-            <h1>Mais informações</h1>
-        </div>
-        <div class="container">
-            <div class="birthday-board">
-                <h2>Aniversariantes do Mês</h2>
-                <ul>
-                    <li>1º - Ana Clara</li>
-                    <li>5º - João Silva</li>
-                    <li>12º - Beatriz Oliveira</li>
-                    <li>20º - Pedro Santos</li>
-                    <li>28º - Maria Eduarda</li>
-                </ul>
-            </div>
-        </div>
-
+        
         <!-- MAIS INFOS -->
         <div class="text-info">
             <h1>Mais informações</h1>
@@ -128,6 +111,45 @@
             </div>
         </div>
 
+        <div class="text-info">
+            <h1>Quadro de Aniversariantes e Gestão</h1>
+        </div>
+        <!-- ANIVERSÁRIOS E  -->
+        <div class="container-others">
+            <!-- Seção de Aniversariantes -->
+            <div class="birthday-board">
+                <div class="birthday-header">
+                    Aniversariantes do Mês 🎉
+                </div>
+                <ul class="birthday-list">
+                    <li><strong>01/12:</strong> João Silva</li>
+                    <li><strong>05/12:</strong> Maria Oliveira</li>
+                    <li><strong>10/12:</strong> Pedro Santos</li>
+                    <li><strong>15/12:</strong> Ana Costa</li>
+                    <li><strong>20/12:</strong> Carlos Lima</li>
+                </ul>
+            </div>
+        
+            <!-- Carrossel de Imagens -->
+            <div class="carrossel-container">
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <div class="carrossel-gestao">
+                    <img src="IMG/gestao1.jpg" alt="Imagem 1">
+                    <img src="IMG/gestao2.jpg" alt="Imagem 2">
+                    <img src="IMG/gestao3.jpg" alt="Imagem 3">
+                    <img src="IMG/gestao4.jpg" alt="Imagem 4">
+                    <img src="IMG/gestao5.jpg" alt="Imagem 5">
+                    <img src="IMG/gestao6.jpg" alt="Imagem 6">
+                    <img src="IMG/gestao7.jpg" alt="Imagem 7">
+                    <img src="IMG/gestao8.jpg" alt="Imagem 8">
+                    <img src="IMG/gestao9.jpg" alt="Imagem 9">
+                    <img src="IMG/gestao10.jpg" alt="Imagem 10">
+                    <img src="IMG/gestao11.jpg" alt="Imagem 11">
+                    <img src="IMG/gestao12.jpg" alt="Imagem 12">
+                </div>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>                      
+        </div>
         <!-- FOOTER -->
         <footer>
             <div class="footer-container">
@@ -168,6 +190,7 @@
 <!-- SCRIPTS - HOME-->
 <script src="JS/mobile-navbar.js"></script>
 <script src="JS/image-carrosel.js"></script>
+<script src="JS/carrosel-gestao.js"></script>
 <script src="JS/flipdown.js"></script>
 
 </html>

@@ -153,27 +153,49 @@
     background-color: #689411;
 }
 
-/* Quadro de Aniversariantes */
-.birthday-board {
-    width: 280px;
-    background: #fdf7e3;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: 2px solid #ffcb77;
-    position: relative;
-    overflow: hidden;
+/* Contêiner principal */
+.container-others {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Cabeçalho do Quadro */
+/* Quadro de Aniversariantes */
+.birthday-board {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    position: relative;
+    overflow: hidden;
+
+    margin: 20px 40px;
+    padding: 20px;
+
+    background: #eee;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #9acd32;
+    flex-grow: 1;
+}
+
+/* Cabeçalho com o gradiente verde */
 .birthday-header {
-    background: linear-gradient(90deg, #ffcb77, #f4a261);
+    background: linear-gradient(90deg, #9acd32, #689411);
+
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 15px;
+
     color: #ffffff;
     font-size: 1.2em;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -182,7 +204,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    color: #444;
+
+    color: #333;
     font-size: 1em;
     line-height: 1.8;
 
@@ -196,8 +219,61 @@
 }
 
 .birthday-list strong {
-    color: #f4a261;
+    color: #689411; /* Verde mais escuro para destaque */
 }
+
+/* Carrossel de Gestão */
+.carrossel-container {
+    width: 100%;
+    max-width: 600px; /* Largura máxima do carrossel */
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-grow: 1; /* Faz o carrossel crescer proporcionalmente */
+}
+
+.carrossel-gestao {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 0;
+}
+
+.carrossel-gestao img {
+    width: 100%; /* Ajusta a imagem ao tamanho do carrossel */
+    height: 400px; /* Altura fixa para as imagens */
+    object-fit: cover;
+}
+
+/* Botões de Navegação */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+button.prev {
+    left: 0px;
+}
+
+button.next {
+    right: 0px;
+}
+
 
 /* MAIS INFO */
 .text-info {
@@ -291,6 +367,23 @@
         height: 300px;
         width: 80%;
     }
+
+    .container-others {
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Ajuste do Quadro de Aniversariantes */
+    .birthday-board {
+        max-width: 450px;
+        margin: 10px 20px;
+    }
+
+    /* Ajuste do Carrossel */
+    .carrossel-container {
+        max-width: 550px;
+    }
 }
 
 @media (max-width: 659px) {
@@ -330,5 +423,27 @@
 
     .content h2 {
         margin-left: 20px;
+    }
+
+    .container-others {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .birthday-board {
+        width: auto;
+        margin: 10px 20px;
+        padding: 15px;
+    }
+
+    .carrossel-container {
+        margin-top: 15px;
+
+        width: auto;
+        margin: 10px 20px;
+    }
+
+    .carrossel-gestao img {
+        height: 290px;
     }
 }
