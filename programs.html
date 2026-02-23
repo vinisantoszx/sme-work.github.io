@@ -1,136 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secretaria Municipal de Educação - Itatira</title>
+    <title>Programas | SME Itatira</title>
 
-    <!-- CSS E RESET -->
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/pages.css">
     <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/programs.css">
-    
 
-    <!-- FONTES E LINKS EXTERNOS -->
     <link rel="shortcut icon" href="IMG/logotipo-sme.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
 </head>
 
-<!-- FINALIZADO DIA 15/10/2024 -->
-
 <body>
+    <header class="main-header">
+        <nav class="main-menu">
+            <a href="index.html" class="logo-link"><img src="IMG/logo-sme.png" alt="Logotipo SME"
+                    class="image-logo"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html" class="link-nav active">Início</a></li>
+                <li><a href="history.html" class="link-nav">História</a></li>
+                <li><a href="departaments.html" class="link-nav">Departamentos</a></li>
+                <li><a href="programs.html" class="link-nav">Programas</a></li>
+                <li><a href="school_units.html" class="link-nav">Unidades Escolares</a></li>
+                <li><a href="council.html" class="link-nav">Conselhos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- MENU DE NAVEGAÇÃO - DESKTOP/MOBILE -->
-    <nav class="main-menu">
-        <a href="index.html"><img src="IMG/logo-sme.png" alt="logo-sme" class="image-logo"></a>
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-            <li><a href="index.html" class="link-nav">Início</a></li>
-            <li><a href="history.html" class="link-nav">História</a></li>
-            <li><a href="departaments.html" class="link-nav">Departamentos</a></li>
-            <li><a href="programs.html" class="link-nav"><p>Programas</p></a></li>
-            <li><a href="school_units.html" class="link-nav"><p>Unidades <br id="break-school"> Escolares</p></a></li>
-            <li><a href="advice.html" class="link-nav"><p>Conselhos</p></a></li>
-        </ul>
-    </nav>
-    
-    <!-- PÁGINA - PROGRAMAS -->
     <main>
-        <!-- TEXTOS - PROGRAMAS -->
-        <div class="text-services">
-            <h2>Nossos programas</h2>
+        <div class="page-header">
+            <h1>Nossos Programas</h1>
         </div>
 
-        <!-- PROGRAMAS - DISPONÍVEIS -->
-        <div class="container">
-            <div class="card card-expandable">
-                <img src="IMG/prog-pdde.png" alt="Imagem 1">
-                <div class="card-content">PDDE</div>
-                <div class="expandable-content">
-                    <p>O Programa Dinheiro Direto na Escola – PDDE, criado no ano de 1995, também conhecido pelas entidades participantes como PDDE Básico, atualmente é regido pela Resolução CD/FNDE/MEC nº 15, de 16 de setembro de 2021. Ela dispõe sobre as orientações para o apoio técnico e financeiro, fiscalização e monitoramento na execução do Programa, em cumprimento ao disposto na Lei nº 11.947, de 16 de junho de 2009.</p>
+        <section class="page-container">
+            <div class="programs-grid">
+                <div class="card-expandable">
+                    <img src="IMG/prog-pdde.png" alt="PDDE">
+                    <div class="card-content">PDDE</div>
+                    <div class="expandable-content">
+                        <p>O Programa Dinheiro Direto na Escola – PDDE, criado no ano de 1995, dispõe sobre orientações
+                            para apoio técnico, financeiro, fiscalização e monitoramento na execução do Programa, em
+                            cumprimento ao disposto na Lei nº 11.947, de 16 de junho de 2009.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-expandable">
-                <img src="IMG/prog-ec.png" alt="Imagem 2">
-                <div class="card-content">ESCOLA E COMUNIDADE</div>
-                <div class="expandable-content">
-                    <p>Instituído pela Portaria n° 264, de 1° de abril de 2024, o Proec tem como finalidade estimular a parceria entre a escola, a família e a comunidade, na perspectiva da educação integral, por meio da participação de estudantes, profissionais da educação, familiares e membros da comunidade em projetos de formação que envolvam a promoção da cidadania, da cultura de paz e democrática e a melhoria da qualidade da educação pública brasileira.</p>
-                </div>
-            </div>
-            <div class="card card-expandable">
-                <img src="IMG/prog-conec.png" alt="Imagem 3">
-                <div class="card-content">EDUCAÇÃO CONECTADA</div>
-                <div class="expandable-content">
-                    <p>
-                        O Programa de Inovação Educação Conectada do Ministério da Educação tem o objetivo de apoiar a universalização do acesso à internet de alta velocidade, por via terrestre e satelital, e fomentar o uso de tecnologia digital na Educação Básica. <br><br>
-                        
-                        Para isso, o Programa foi elaborado com quatro dimensões: visão, formação, recursos educacionais digitais e infraestrutura que se complementam e devem estar em equilíbrio, para que o uso de tecnologia digital tenham efeito positivo na educação.</p>
-                </div>
-            </div>
-            <div class="card card-expandable">
-                <img src="IMG/prog-sala.png" alt="Imagem 4">
-                <div class="card-content">SALA DE RECURSOS</div>
-                <div class="expandable-content">
-                    <p>Recursos Multifuncionais destina recursos financeiros para equipar salas de recursos multifuncionais e bilíngues de surdos, destinadas ao atendimento educacional especializado, visando à aquisição ou adequação de itens que compõem essas salas às escolas públicas municipais, estaduais e do Distrito Federal da Educação Básica, em conformidade com o Programa Escola Acessível. <br><br>
 
-                    Os recursos podem ser utilizados na aquisição de itens e materiais pedagógicos; cadeiras de rodas; bebedouros acessíveis; produtos de tecnologia assistiva, equipamentos e materiais para o atendimento educacional especializado bilíngue de surdos, entre outros.</p>
+                <div class="card-expandable">
+                    <img src="IMG/prog-ec.png" alt="Escola e Comunidade">
+                    <div class="card-content">ESCOLA E COMUNIDADE</div>
+                    <div class="expandable-content">
+                        <p>Instituído pela Portaria n° 264, de 1° de abril de 2024, o Proec tem como finalidade
+                            estimular a parceria entre a escola, a família e a comunidade, na perspectiva da educação
+                            integral.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-expandable">
-                <img src="IMG/prog-leitura.png" alt="Imagem 5">
-                <div class="card-content">CANTINHO DA LEITURA</div>
-                <div class="expandable-content">
-                    <p>Viabilizar a instalação de espaços de incentivo a práticas de leitura em sala de aulas apropriados à faixa etária, ao contexto sociocultural, ao gênero e ao pertencimento étnico-racial dos estudantes, conforme o Decreto nº 11.556, de 12 de junho de 2023, que instituiu o Compromisso Nacional Criança Alfabetizada e estipulou, em seu art. 29, incisos II e III, a disponibilização de recursos pedagógicos, equipamentos, materiais e outros insumos utilizados pelas redes de ensino para a implementação dos programas de alfabetização.</p>
+
+                <div class="card-expandable">
+                    <img src="IMG/prog-conec.png" alt="Educação Conectada">
+                    <div class="card-content">EDUCAÇÃO CONECTADA</div>
+                    <div class="expandable-content">
+                        <p>O Programa de Inovação Educação Conectada do Ministério da Educação tem o objetivo de apoiar
+                            a universalização do acesso à internet de alta velocidade e fomentar o uso de tecnologia
+                            digital na Educação Básica.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-container">
-                <!-- Coluna de Contato -->
-                <div class="footer-column">
-                    <h2>Contato</h2>
-                    <p>Endereço: Rua Antônio Alves Guerra, S/N, Itatira-CE</p>
-                    <p>Telefone: (88) 98188-2384</p>
-                    <p>CNPJ: 06.086.082/0001-15</p>
-                    <p>Email: educ@educ.itatira.ce.gov.br</p>
-                    <p>Horário de Atendimento: Segunda a Sexta, 8h - 16h</p>
+
+                <div class="card-expandable">
+                    <img src="IMG/prog-sala.png" alt="Sala de Recursos">
+                    <div class="card-content">SALA DE RECURSOS</div>
+                    <div class="expandable-content">
+                        <p>Recursos Multifuncionais destinam-se a equipar salas destinadas ao atendimento educacional
+                            especializado, visando à aquisição ou adequação de itens e materiais pedagógicos,
+                            tecnologias assistivas e cadeiras de rodas para escolas públicas.</p>
+                    </div>
                 </div>
-    
-                <!-- Coluna de Links e Redes Sociais -->
-                <div class="footer-column">
-                    <h2>Links Rápidos</h2>
-                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTFFHrwDbQWRPmDVtWFSJdfXrBZnrrdVBFHBwlDzVGhfphGrwfgRRSpwGdjHJxtBbktRxJ">FAQ</a></p>
-                    <p><a href="privacity.html">Política de Privacidade</a></p>
-    
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/smeitatira" target="_blank"><img src="IMG/facebook.svg" alt="Facebook"></a>
-                        <a href="https://wa.me/5585987920752?text=Quero%20entrar%20em%20contato%20com%20a%20SME" target="_blank"><img src="IMG/whatsapp.svg" alt="Whatsapp"></a>
-                        <a href="https://www.instagram.com/smeitatira/" target="_blank"><img src="IMG/instagram.svg" alt="Instagram"></a>
+
+                <div class="card-expandable">
+                    <img src="IMG/prog-leitura.png" alt="Cantinho da Leitura">
+                    <div class="card-content">CANTINHO DA LEITURA</div>
+                    <div class="expandable-content">
+                        <p>Viabilizar a instalação de espaços de incentivo a práticas de leitura nas salas de aula,
+                            apropriados ao contexto sociocultural, conforme o Decreto nº 11.556, para o Compromisso
+                            Nacional Criança Alfabetizada.</p>
                     </div>
                 </div>
             </div>
-    
-            <div class="footer-bottom">
-                <p>&copy; 2024 <a href="https://github.com/vinisantoszx">vinisantoszx</a>. Todos os direitos reservados.</p>
-                <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
-            </div>
-        </footer>
-
+        </section>
     </main>
-    
-</body>
 
-<!-- SCRIPTS - PROGRAMS -->
-<script src="JS/mobile-navbar.js"></script>
-<script src="JS/card-programs.js"></script>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <img src="IMG/logo-sme-mono.png" alt="SME Mono" class="footer-logo" onerror="this.style.display='none'">
+                <p><strong>Secretaria Municipal de Educação</strong></p>
+                <p>Rua Antônio Alves Guerra, S/N<br>Itatira-CE</p>
+                <p>CNPJ: 06.086.082/0001-15</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contatos</h3>
+                <p><span class="material-symbols-outlined">call</span> (88) 98230-1166</p>
+                <p><span class="material-symbols-outlined">mail</span> educ@educ.itatira.ce.gov.br</p>
+                <p><span class="material-symbols-outlined">schedule</span> Seg a Sex, 8h - 16h</p>
+            </div>
+            <div class="footer-links">
+                <h3>Acesso Rápido</h3>
+                <a href="#">FAQ / Ajuda</a>
+                <a href="privacity.html">Política de Privacidade</a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/smeitatira" target="_blank" title="Facebook"><img
+                            src="IMG/facebook.svg" alt="FB"></a>
+                    <a href="https://wa.me/5588982301166" target="_blank" title="WhatsApp"><img src="IMG/whatsapp.svg"
+                            alt="WA"></a>
+                    <a href="https://www.instagram.com/smeitatira/" target="_blank" title="Instagram"><img
+                            src="IMG/instagram.svg" alt="IG"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Secretaria Municipal de Educação de Itatira. Todos os direitos reservados.</p>
+            <p class="dev-credits">Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius
+                    Santos</a></p>
+        </div>
+    </footer>
+
+    <script src="JS/mobile-navbar.js"></script>
+    <script src="JS/card-programs.js"></script>
+</body>
 
 </html>

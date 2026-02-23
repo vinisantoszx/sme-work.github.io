@@ -3,940 +3,711 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secretaria Municipal de Educação - Itatira</title>
+    <title>Unidades Escolares | SME Itatira</title>
 
-    <!-- CSS E RESET -->
-     <link rel="stylesheet" href="CSS/school_units.css">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-
-    <!-- FONTES E LINKS EXTERNOS -->
-    <link rel="shortcut icon" href="IMG/logotipo-sme.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
-     
-</head>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/pages.css"> <link rel="stylesheet" href="CSS/footer.css">
 
-<!-- FINALIZADO DIA 16/10/2024 -->
+    <link rel="shortcut icon" href="IMG/logotipo-sme.png" type="image/x-icon">
+</head>
 
 <body>
 
-    <!-- MENU DE NAVEGAÇÃO - DESKTOP/MOBILE -->
-    <nav class="main-menu">
-        <a href="index.html"><img src="IMG/logo-sme.png" alt="logo-sme" class="image-logo"></a>
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-            <li><a href="index.html" class="link-nav">Início</a></li>
-            <li><a href="history.html" class="link-nav">História</a></li>
-            <li><a href="departaments.html" class="link-nav">Departamentos</a></li>
-            <li><a href="programs.html" class="link-nav"><p>Programas</p></a></li>
-            <li><a href="school_units.html" class="link-nav"><p>Unidades <br id="break-school"> Escolares</p></a></li>
-            <li><a href="advice.html" class="link-nav"><p>Conselhos</p></a></li>
-        </ul>
-    </nav>
+    <header class="main-header">
+        <nav class="main-menu">
+            <a href="index.html" class="logo-link">
+                <img src="IMG/logo-sme.png" alt="Logotipo SME Itatira" class="image-logo">
+            </a>
+            
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html" class="link-nav">Início</a></li>
+                <li><a href="history.html" class="link-nav">História</a></li>
+                <li><a href="departaments.html" class="link-nav">Departamentos</a></li>
+                <li><a href="programs.html" class="link-nav">Programas</a></li>
+                <li><a href="school_units.html" class="link-nav active">Unidades Escolares</a></li>
+                <li><a href="council.html" class="link-nav">Conselhos</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <!-- PÁGINA - UNIDADES ESCOLARES -->
     <main>
-        <!-- TEXTO - ESCOLAS -->
-        <div class="text-services">
-            <h2>Unidades Escolares</h2>
+        <div class="page-header">
+            <h1>Unidades Escolares</h1>
         </div>
 
-        <!-- CARDS - ESCOLAS -->
-        <div class="text-services">
-            <h2>ITATIRA</h2>
-        </div>
-
-            <div class="full-box"> <!--BOX OK-->
-                <div class="full-width-card"> <!--ESCOLA OK-->
+        <section class="page-container">
+            <h2 style="color: var(--color-primary); margin: 2rem 0 1rem 0; font-size: 1.5rem; text-align: center; font-weight: 700;">ITATIRA</h2>
+            
+            <div class="full-box">
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI Estevam de Alencar Guerra</h2>
+                        <span>CEI Estevam de Alencar Guerra</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Luzia Catunda Soares</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1104</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Av. Antônio Sabino Guerra, S/N, Itatira-CE</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1007.2827765234703!2d-39.627341815236406!3d-4.530435013698828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be4956e83d1f49%3A0x92fa55f5ec8cbc98!2sCreche%20Municipal%20de%20Itatira!5e1!3m2!1spt-BR!2sbr!4v1727113171039!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1007.2827765234703!2d-39.627341815236406!3d-4.530435013698828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be4956e83d1f49%3A0x92fa55f5ec8cbc98!2sCreche%20Municipal%20de%20Itatira!5e1!3m2!1spt-BR!2sbr!4v1727113171039!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI Chave do Saber</h2>
+                        <span>CEI Chave do Saber</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Iara Oliveira Ferreira</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
-                        <p>Email: iara_leticia2010@hotmail.com<br>
-                        Telefone: (88) 8141-4686</p>
-                        <!-- ENDEREÇO -->
+                        <p>Email: iara_leticia2010@hotmail.com<br>Telefone: (88) 8141-4686</p>
                         <h2>Endereço:</h2>
                         <p>Centro, S/N, Itatira-CE</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1007.2846961772316!2d-39.62181965692374!3d-4.529056737171057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727113006527!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1007.2846961772316!2d-39.62181965692374!3d-4.529056737171057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727113006527!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Nossa Senhora Santana</h2>
+                        <span>EMEIF Nossa Senhora Santana</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Supervisora:</h2>
                         <p>Herta Coelho Alves</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 98148-2348</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Fazenda Santana</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15122.2409065731!2d-39.633297356385846!3d-4.529650577115986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be485ab15701ad%3A0x51f031bf24db9161!2sItatira%2C%20CE%2C%2062720-000!5e1!3m2!1spt-BR!2sbr!4v1727803423820!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15122.2409065731!2d-39.633297356385846!3d-4.529650577115986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be485ab15701ad%3A0x51f031bf24db9161!2sItatira%2C%20CE%2C%2062720-000!5e1!3m2!1spt-BR!2sbr!4v1727803423820!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
                 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Manoel de Sales Gomes</h2>
+                        <span>EMEIF Manoel de Sales Gomes</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Supervisora:</h2>
                         <p>Herta Coelho Alves</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 98148-2348</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Contendas</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2161.5562360703225!2d-39.63890270623712!3d-4.5607510691920785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727283525433!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2161.5562360703225!2d-39.63890270623712!3d-4.5607510691920785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727283525433!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
         
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEF Adelídia Magno de Oliveira</h2>
+                        <span>EMEF Adelídia Magno de Oliveira</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretor:</h2>
                         <p>Raimundo Nonato Sales do Santos</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Fundamental II <br>
-                        Tempo Integral/Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Fundamental II <br>Tempo Integral/Regular</p>
                         <h2>Contatos:</h2>
-                        <p>Email: adelidiamagno@yahoo.com.br<br>
-                        Telefone: (88) 98174-6260</p>
-                        <!-- ENDEREÇO -->
+                        <p>Email: adelidiamagno@yahoo.com.br<br>Telefone: (88) 98174-6260</p>
                         <h2>Endereço:</h2>
                         <p>Rua Padre José Laurindo, S/N, Itatira-CE</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592.4674324818839!2d-39.62297257557945!3d-4.529325658728498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be49948c14c6b7%3A0xe8fef267aed49184!2sEscola%20Adel%C3%ADdia%20Magno%20de%20Oliveira!5e1!3m2!1spt-BR!2sbr!4v1727111174124!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592.4674324818839!2d-39.62297257557945!3d-4.529325658728498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be49948c14c6b7%3A0xe8fef267aed49184!2sEscola%20Adel%C3%ADdia%20Magno%20de%20Oliveira!5e1!3m2!1spt-BR!2sbr!4v1727111174124!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-        <div class="text-services">
-            <h2>LAGOA DO MATO</h2>
-        </div>
-
-            <div class="full-box"> <!--BOX OK-->
-                <div class="full-width-card"> <!--ESCOLA OK-->
+            <h2 style="color: var(--color-primary); margin: 3rem 0 1rem 0; font-size: 1.5rem; text-align: center; font-weight: 700;">LAGOA DO MATO</h2>
+            
+            <div class="full-box">
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI José Augusto Lobo</h2>
+                        <span>CEI José Augusto Lobo</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Luciana Alexandra da Silva Fernandes</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Av. Trajano Honorato, S/N, Lagoa do Mato, Itatira-CE</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.1152900733698!2d-39.67261222099844!3d-4.649946429345334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be3fa2098966c5%3A0xaec67fe55b93ef4b!2sCentro%20de%20Educa%C3%A7%C3%A3o%20Infantil%20Jos%C3%A9%20Augusto%20Lobo!5e1!3m2!1spt-BR!2sbr!4v1727289692088!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.1152900733698!2d-39.67261222099844!3d-4.649946429345334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be3fa2098966c5%3A0xaec67fe55b93ef4b!2sCentro%20de%20Educa%C3%A7%C3%A3o%20Infantil%20Jos%C3%A9%20Augusto%20Lobo!5e1!3m2!1spt-BR!2sbr!4v1727289692088!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI Antônio Martins Bernardo</h2>
+                        <span>CEI Antônio Martins Bernardo</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Francisca Erilandia Rodrigues Mesquita</p>
-                        <!-- TIPO DE ENSINO -->
-                       <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <h2>Tipo de ensino:</h2>
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Conjunto Lúcia de Fátima, S/N, Lagoa do Mato, Itatira-CE</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.275923324445!2d-39.675460738816085!3d-4.639222369192649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be3fc02d2aec0d%3A0x9c48795ff1aeee31!2sCreche%20Antonio%20Martins%20Bernardo!5e1!3m2!1spt-BR!2sbr!4v1727289811065!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.275923324445!2d-39.675460738816085!3d-4.639222369192649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be3fc02d2aec0d%3A0x9c48795ff1aeee31!2sCreche%20Antonio%20Martins%20Bernardo!5e1!3m2!1spt-BR!2sbr!4v1727289811065!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
                 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEF Antônio Honorato</h2>
+                        <span>EMEF Antônio Honorato</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Antônia Amorim Batista</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Fundamental I<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Fundamental I<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
-                        <p>Telefone: (88) 3436-1067<br>
-                        Email: e.m.e.f.antoniohonorato@hotmail.com</p>
-                        <!-- ENDEREÇO -->
+                        <p>Telefone: (88) 3436-1067<br>Email: e.m.e.f.antoniohonorato@hotmail.com</p>
                         <h2>Endereço:</h2>
                         <p>Centro, S/N, Lagoa do Mato, Itatira-CE</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d592.966670322452!2d-39.676092100941794!3d-4.65049672738921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727289650433!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d592.966670322452!2d-39.676092100941794!3d-4.65049672738921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727289650433!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEF José Paulo de Sousa - CERU</h2>
+                        <span>EMEF José Paulo de Sousa - CERU</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Maria Elizabete Ribeiro Pinho</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Fundamental II<br>
-                        Tempo Integral/Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Fundamental II<br>Tempo Integral/Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO-->
                         <h2>Endereço:</h2>
                         <p>Av. Zezé Jucá, S/N, Lagoa do Mato, Itatira-CE</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4065.735722301033!2d-39.671034324975!3d-4.6487872158477614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be3fa119dfa6ef%3A0xa34d5e4e84b8f82a!2sCeru%20-%20Centro%20Educacional%20Rural!5e1!3m2!1spt-BR!2sbr!4v1727290104082!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4065.735722301033!2d-39.671034324975!3d-4.6487872158477614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be3fa119dfa6ef%3A0xa34d5e4e84b8f82a!2sCeru%20-%20Centro%20Educacional%20Rural!5e1!3m2!1spt-BR!2sbr!4v1727290104082!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Alfares João Guerra</h2>
+                        <span>EMEIF Alfares João Guerra</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Agente pedagógica:</h2>
                         <p>Geania Chagas Paulo</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Assentamento Umarizeiras</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1163.6210697461477!2d-39.62375112692606!3d-4.673095905743071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727370619373!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1163.6210697461477!2d-39.62375112692606!3d-4.673095905743071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727370619373!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF José Germano Ferreira</h2>
+                        <span>EMEIF José Germano Ferreira</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretor:</h2>
                         <p>Antônio André Bastos Maciel</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Poço da Pedra</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.492814085323!2d-39.611574159123414!3d-4.707874399014531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be6b11e6dec227%3A0xde909cd571b6a047!2sEMEF%20Jos%C3%A9%20Germano%20Ferreira!5e1!3m2!1spt-BR!2sbr!4v1727370683380!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.492814085323!2d-39.611574159123414!3d-4.707874399014531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be6b11e6dec227%3A0xde909cd571b6a047!2sEMEF%20Jos%C3%A9%20Germano%20Ferreira!5e1!3m2!1spt-BR!2sbr!4v1727370683380!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Emídio Carneiro</h2>
+                        <span>EMEIF Emídio Carneiro</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretor:</h2>
                         <p>Antônia Amorim Batista</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>São José dos Guerra</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3703.1344365034734!2d-39.718167825071795!3d-4.719618923111916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727370776632!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3703.1344365034734!2d-39.718167825071795!3d-4.719618923111916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727370776632!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
-                
             </div>
 
-        <div class="text-services">
-            <h2>MORRO BRANCO</h2>
-        </div>
-
-            <div class="full-box"> <!--BOX OK-->
-                <div class="full-width-card"> <!--ESCOLA OK-->
+            <h2 style="color: var(--color-primary); margin: 3rem 0 1rem 0; font-size: 1.5rem; text-align: center; font-weight: 700;">MORRO BRANCO</h2>
+            
+            <div class="full-box">
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI Maria de Fátima Félix</h2>
+                        <span>CEI Maria de Fátima Félix</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Maria Elizete Ribeiro Pinto Viana</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Morro Branco</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF 7 de Setembro</h2>
+                        <span>EMEIF 7 de Setembro</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Antônia Andreia Sabino Rodrigues</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1078</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Morro Branco</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Leôncio Macambira</h2>
+                        <span>EMEIF Leôncio Macambira</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Supervisora:</h2>
                         <p>Luciene Silvestre de Lima</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Fazenda Caipira</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Menino Jesus de Praga</h2>
+                        <span>EMEIF Menino Jesus de Praga</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Rosiane Costa Brito Bomfim</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
-                        <p>Email: rose.cbb@hotmail.com<br>
-                        Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
+                        <p>Email: rose.cbb@hotmail.com<br>Telefone: (88) 3436-1067</p>
                         <h2>Endereço:</h2>
                         <p>Lagoa de Dentro</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4595.520663363871!2d-39.55611438212596!3d-4.599988995790995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727372207541!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4595.520663363871!2d-39.55611438212596!3d-4.599988995790995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727372207541!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Maria de Nazaré Costa e Silva</h2>
+                        <span>EMEIF Maria de Nazaré Costa e Silva</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Maria de Fátima Sobrinho de Lima</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Fazenda Recanto</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8935942135408!2d-39.58817335766034!3d-4.57989051957323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be466714ebe629%3A0x868f2323c09d95a2!2sMorro%20Branco!5e1!3m2!1spt-BR!2sbr!4v1727112684602!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-        <div class="text-services">
-            <h2>BANDEIRA</h2>
-        </div>
-
-            <div class="full-box"> <!--BOX OK-->
-                <div class="full-width-card"> <!--ESCOLA OK-->
+            <h2 style="color: var(--color-primary); margin: 3rem 0 1rem 0; font-size: 1.5rem; text-align: center; font-weight: 700;">BANDEIRA</h2>
+            
+            <div class="full-box">
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI Gerardo Batista Nunes</h2>
+                        <span>CEI Gerardo Batista Nunes</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO GERAL -->
                         <h2>Diretora:</h2>
                         <p>Francisca Ediana Pinto Pereira</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
-                        <p>E-mail: edianaprof13@gmail.com <br>
-                        Telefone: (88) 3436-1078</p>
-                        <!-- ENDEREÇO -->
+                        <p>E-mail: edianaprof13@gmail.com <br>Telefone: (88) 3436-1078</p>
                         <h2>Endereço:</h2>
                         <p>Bandeira Novo</p>
-                        <p></p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4347.818755595056!2d-39.47114408514931!3d-4.582533515466376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5b3a0bd5075d%3A0xb74d3d325bdf4643!2sBandeira%20Novo!5e1!3m2!1spt-BR!2sbr!4v1729015143982!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4347.818755595056!2d-39.47114408514931!3d-4.582533515466376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5b3a0bd5075d%3A0xb74d3d325bdf4643!2sBandeira%20Novo!5e1!3m2!1spt-BR!2sbr!4v1729015143982!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEF José Pereira</h2>
+                        <span>EMEF José Pereira</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO GERAL -->
                         <h2>Diretor:</h2>
                         <p>Francisco Ericlaudio Costa Paula</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Fundamental I/II<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Fundamental I/II<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Bandeira Novo</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.3111894632593!2d-39.46872376261439!3d-4.584842901924744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5add2154bdfb%3A0xd0359a3d6871a0f2!2sJose%20Pereira!5e1!3m2!1spt-BR!2sbr!4v1729098521854!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.3111894632593!2d-39.46872376261439!3d-4.584842901924744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5add2154bdfb%3A0xd0359a3d6871a0f2!2sJose%20Pereira!5e1!3m2!1spt-BR!2sbr!4v1729098521854!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Santos Dumont</h2>
+                        <span>EMEIF Santos Dumont</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO GERAL -->
                         <h2>Coordenador:</h2>
                         <p>Antônio Bernevaldo Barbosa Miguel</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental I/II<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental I/II<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Queimada da Onça</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.728921033383!2d-39.51278796409222!3d-4.617292013076822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be43021f16caef%3A0x3a15e95fad264ea8!2sQueimada%20da%20On%C3%A7a!5e1!3m2!1spt-BR!2sbr!4v1729098776159!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.728921033383!2d-39.51278796409222!3d-4.617292013076822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be43021f16caef%3A0x3a15e95fad264ea8!2sQueimada%20da%20On%C3%A7a!5e1!3m2!1spt-BR!2sbr!4v1729098776159!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Flávio Marcílio</h2>
+                        <span>EMEIF Flávio Marcílio</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO GERAL -->
                         <h2>Diretora:</h2>
                         <p>Clerbiana Eleonor da Silva</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental I/II<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental I/II<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Paissandú</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.829678352784!2d-39.50185927024582!3d-4.537555890737352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be4fc5c9d389d9%3A0x74e763af8e335cb!2sEscola%20Fl%C3%A1vio%20Marc%C3%ADlio!5e1!3m2!1spt-BR!2sbr!4v1729099013132!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.829678352784!2d-39.50185927024582!3d-4.537555890737352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be4fc5c9d389d9%3A0x74e763af8e335cb!2sEscola%20Fl%C3%A1vio%20Marc%C3%ADlio!5e1!3m2!1spt-BR!2sbr!4v1729099013132!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Antônio Umbelino</h2>
+                        <span>EMEIF Antônio Umbelino</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO GERAL -->
                         <h2>Coordenadora:</h2>
                         <p>Olivinda Rodrigues Pinto Sousa</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental I/II<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental I/II<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Cachoeira do Umbelino</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8862.802728624305!2d-39.524876414226895!3d-4.56979360848407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be451e19ba2e7d%3A0x3ec97453b44c977e!2sCachoeira%20do%20Umbelino!5e1!3m2!1spt-BR!2sbr!4v1729099267332!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8862.802728624305!2d-39.524876414226895!3d-4.56979360848407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be451e19ba2e7d%3A0x3ec97453b44c977e!2sCachoeira%20do%20Umbelino!5e1!3m2!1spt-BR!2sbr!4v1729099267332!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEF José Augusto da Silva</h2>
+                        <span>EMEF José Augusto da Silva</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO GERAL -->
                         <h2>Coordenadora:</h2>
                         <p>Kecia Maria da Silva</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Fundamental I/II<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Fundamental I/II<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Bandeira Velho</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.9522065652006!2d-39.474875670028275!3d-4.617628442960891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5b5ac7ae3475%3A0x5b5a276bbc667520!2sJos%C3%A9%20Augusto%20da%20Silva!5e1!3m2!1spt-BR!2sbr!4v1729099602656!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.9522065652006!2d-39.474875670028275!3d-4.617628442960891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5b5ac7ae3475%3A0x5b5a276bbc667520!2sJos%C3%A9%20Augusto%20da%20Silva!5e1!3m2!1spt-BR!2sbr!4v1729099602656!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
 
-        <div class="text-services">
-            <h2>CACHOEIRA</h2>
-        </div>
-
-            <div class="full-box"> <!--BOX OK-->
-                <div class="full-width-card"> <!--ESCOLA OK-->
+            <h2 style="color: var(--color-primary); margin: 3rem 0 1rem 0; font-size: 1.5rem; text-align: center; font-weight: 700;">CACHOEIRA</h2>
+            
+            <div class="full-box">
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI Raimundo Miguel de Sousa</h2>
+                        <span>CEI Raimundo Miguel de Sousa</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Antônia Silvana Sabino</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (85) 98121-9667</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Cachoeira BR</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15118.752148408525!2d-39.45113815636878!3d-4.693543124502104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be6780fdd53d63%3A0x5f23714c4e7bf1a1!2sCachoeira%2C%20Itatira%20-%20CE%2C%2062720-000!5e1!3m2!1spt-BR!2sbr!4v1727716651443!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15118.752148408525!2d-39.45113815636878!3d-4.693543124502104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be6780fdd53d63%3A0x5f23714c4e7bf1a1!2sCachoeira%2C%20Itatira%20-%20CE%2C%2062720-000!5e1!3m2!1spt-BR!2sbr!4v1727716651443!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>CEI Lídia Barbosa da Sousa</h2>
+                        <span>CEI Lídia Barbosa da Sousa</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Maria Lucia Batista dos Santos</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 98157-0269</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Cachoeira BR</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4528.060863392532!2d-39.45398574049915!3d-4.691890231762089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be6725d7158245%3A0xcc26de70eae3023d!2sCentro%20de%20Educa%C3%A7%C3%A3o%20Infantil%20L%C3%ADdia%20Barbosa%20de%20Sousa!5e1!3m2!1spt-BR!2sbr!4v1727716819315!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4528.060863392532!2d-39.45398574049915!3d-4.691890231762089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be6725d7158245%3A0xcc26de70eae3023d!2sCentro%20de%20Educa%C3%A7%C3%A3o%20Infantil%20L%C3%ADdia%20Barbosa%20de%20Sousa!5e1!3m2!1spt-BR!2sbr!4v1727716819315!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEF Eduardo Barbosa</h2>
+                        <span>EMEF Eduardo Barbosa</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretor:</h2>
                         <p>Pedro Ivo Rodrigues do Santos</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Cachoeira BR</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39596.12725860995!2d-39.46490626195361!3d-4.678815752436795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be67a57378793d%3A0xf7d9dd5dac1479c1!2sEMEF%20Eduardo%20Barbosa!5e1!3m2!1spt-BR!2sbr!4v1727802345743!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39596.12725860995!2d-39.46490626195361!3d-4.678815752436795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be67a57378793d%3A0xf7d9dd5dac1479c1!2sEMEF%20Eduardo%20Barbosa!5e1!3m2!1spt-BR!2sbr!4v1727802345743!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF Antônio Gomes de Sousa</h2>
+                        <span>EMEIF Antônio Gomes de Sousa</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretor:</h2>
                         <p>Erandir Pereira</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Fazenda Vitória</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1695.9455358038476!2d-39.44734040259632!3d-4.654607734681607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5de4f15cb3c9%3A0x95d2993f6653bc8d!2sEMEIF%20Ant%C3%B4nio%20Gomes%20de%20Sousa!5e1!3m2!1spt-BR!2sbr!4v1727801808021!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1695.9455358038476!2d-39.44734040259632!3d-4.654607734681607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be5de4f15cb3c9%3A0x95d2993f6653bc8d!2sEMEIF%20Ant%C3%B4nio%20Gomes%20de%20Sousa!5e1!3m2!1spt-BR!2sbr!4v1727801808021!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF José Pessoa de Carvalho</h2>
+                        <span>EMEIF José Pessoa de Carvalho</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Coordenadora:</h2>
                         <p>Maria Luísa Castro Mariano</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 8123-4814</p>
-                        <!-- ENDEREÇO -->
                         <h2>Endereço:</h2>
                         <p>Queimada da Onça</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1023.5353588715578!2d-39.534233711177514!3d-4.643332603135657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be4325714dbdff%3A0xedde63f9f9e7a8f1!2sEMEIF%20Jos%C3%A9%20Pessoa%20de%20Carvalho!5e1!3m2!1spt-BR!2sbr!4v1727802273823!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1023.5353588715578!2d-39.534233711177514!3d-4.643332603135657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be4325714dbdff%3A0xedde63f9f9e7a8f1!2sEMEIF%20Jos%C3%A9%20Pessoa%20de%20Carvalho!5e1!3m2!1spt-BR!2sbr!4v1727802273823!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF José Pereira Sobrinho</h2>
+                        <span>EMEIF José Pereira Sobrinho</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretor:</h2>
                         <p>Antônio Ivanilson Holanda de Sousa</p>
-                        <!-- TIPO DE ENSINO -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil e Fundamental<br>
-                        Tempo Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil e Fundamental<br>Tempo Regular</p>
                         <h2>Contatos:</h2>
                         <p>Telefone: (88) 3436-1067</p>
-                        <!-- ENDEREÇO -->
                         <h2>Localidade:</h2>
                         <p>São Gonçalo</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15119.375300372565!2d-39.51652335637179!3d-4.664690624962085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be42ee164c9023%3A0xd732f5193ce6828f!2sS%C3%A3o%20Gon%C3%A7alo%20-%20Cachoeira%2C%20Itatira%20-%20CE%2C%2062720-000!5e1!3m2!1spt-BR!2sbr!4v1727718349771!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15119.375300372565!2d-39.51652335637179!3d-4.664690624962085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be42ee164c9023%3A0xd732f5193ce6828f!2sS%C3%A3o%20Gon%C3%A7alo%20-%20Cachoeira%2C%20Itatira%20-%20CE%2C%2062720-000!5e1!3m2!1spt-BR!2sbr!4v1727718349771!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="full-width-card"> <!--ESCOLA OK-->
+                <div class="full-width-card">
                     <div class="card-header" onclick="toggleCard(this)">
-                        <h2>EMEIF 13 de Maio</h2>
+                        <span>EMEIF 13 de Maio</span>
+                        <span class="material-symbols-outlined">expand_more</span>
                     </div>
                     <div class="card-body" id="cardBody">
-                        <!-- DIREÇÃO ESCOLAR -->
                         <h2>Diretora:</h2>
                         <p>Maria Ilzenir Germano dos Santos</p>
-                        <!-- TIPO DE ESCOLA -->
                         <h2>Tipo de ensino:</h2>
-                        <p>Escola de Ensino Infantil/Fundamental I e II <br>
-                        Tempo Integral/Regular</p>
-                        <!-- CONTATOS -->
+                        <p>Escola de Ensino Infantil/Fundamental I e II <br>Tempo Integral/Regular</p>
                         <h2>Contatos:</h2>
-                        <p>Email: ilzenirgermano@gmail.com<br>
-                        Telefone: (85) 98134-6048</p>
-                        <!-- ENDEREÇO -->
+                        <p>Email: ilzenirgermano@gmail.com<br>Telefone: (85) 98134-6048</p>
                         <h2>Endereço:</h2>
                         <p>Alegre II</p>
                         <div class="card-map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.2479605084296!2d-39.50986917336684!3d-4.701902730431534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be69000715eb33%3A0x400510d233d9fd8b!2sE.M.E.I.F.%2013%20de%20Maio!5e1!3m2!1spt-BR!2sbr!4v1727111004842!5m2!1spt-BR!2sbr"
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.2479605084296!2d-39.50986917336684!3d-4.701902730431534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be69000715eb33%3A0x400510d233d9fd8b!2sE.M.E.I.F.%2013%20de%20Maio!5e1!3m2!1spt-BR!2sbr!4v1727111004842!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-container">
-                <!-- Coluna de Contato -->
-                <div class="footer-column">
-                    <h2>Contato</h2>
-                    <p>Endereço: Rua Antônio Alves Guerra, S/N, Itatira-CE</p>
-                    <p>Telefone: (88) 98188-2384</p>
-                    <p>CNPJ: 06.086.082/0001-15</p>
-                    <p>Email: educ@educ.itatira.ce.gov.br</p>
-                    <p>Horário de Atendimento: Segunda a Sexta, 8h - 16h</p>
-                </div>
-    
-                <!-- Coluna de Links e Redes Sociais -->
-                <div class="footer-column">
-                    <h2>Links Rápidos</h2>
-                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTFFHrwDbQWRPmDVtWFSJdfXrBZnrrdVBFHBwlDzVGhfphGrwfgRRSpwGdjHJxtBbktRxJ">FAQ</a></p>
-                    <p><a href="privacity.html">Política de Privacidade</a></p>
-    
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/smeitatira" target="_blank"><img src="IMG/facebook.svg" alt="Facebook"></a>
-                        <a href="https://wa.me/5585987920752?text=Quero%20entrar%20em%20contato%20com%20a%20SME" target="_blank"><img src="IMG/whatsapp.svg" alt="Whatsapp"></a>
-                        <a href="https://www.instagram.com/smeitatira/" target="_blank"><img src="IMG/instagram.svg" alt="Instagram"></a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="footer-bottom">
-                <p>&copy; 2024 <a href="https://github.com/vinisantoszx">vinisantoszx</a>. Todos os direitos reservados.</p>
-                <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
-            </div>
-        </footer>
-        
     </main>
 
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <img src="IMG/logo-sme-mono.png" alt="SME Mono" class="footer-logo" onerror="this.style.display='none'">
+                <p><strong>Secretaria Municipal de Educação</strong></p>
+                <p>Rua Antônio Alves Guerra, S/N<br>Itatira-CE</p>
+                <p>CNPJ: 06.086.082/0001-15</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contatos</h3>
+                <p><span class="material-symbols-outlined">call</span> (88) 98230-1166</p>
+                <p><span class="material-symbols-outlined">mail</span> educ@educ.itatira.ce.gov.br</p>
+                <p><span class="material-symbols-outlined">schedule</span> Seg a Sex, 8h - 16h</p>
+            </div>
+            <div class="footer-links">
+                <h3>Acesso Rápido</h3>
+                <a href="#">FAQ / Ajuda</a>
+                <a href="privacity.html">Política de Privacidade</a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/smeitatira" target="_blank" title="Facebook"><img
+                            src="IMG/facebook.svg" alt="FB"></a>
+                    <a href="https://wa.me/5588982301166" target="_blank" title="WhatsApp"><img src="IMG/whatsapp.svg"
+                            alt="WA"></a>
+                    <a href="https://www.instagram.com/smeitatira/" target="_blank" title="Instagram"><img
+                            src="IMG/instagram.svg" alt="IG"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Secretaria Municipal de Educação de Itatira. Todos os direitos reservados.</p>
+            <p class="dev-credits">Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius
+                    Santos</a></p>
+        </div>
+    </footer>
+
+    <script src="JS/mobile-navbar.js"></script>
+    <script src="JS/toggle-card.js"></script>
+
 </body>
-
-<!-- SCRIPTS - SCHOOL_UNITS -->
- <script src="JS/mobile-navbar.js"></script>
-<script src="JS/toggle-card.js"></script>
-
 </html>

@@ -1,453 +1,269 @@
-/* site desenvolvido por VINICIUS SANTOS */
-/* entre em contato por @vinisantoszx*/
+/* GERAL HOMEPAGE */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
 
-/* CARROSSEL - DESKTOP */
-.carossel {
+/* HERO CARROSSEL */
+.hero-section {
     width: 100%;
-    height: 400px;
-    max-width: 1920px;
-
+    height: 500px;
     position: relative;
-
     overflow: hidden;
 }
 
 .carossel-inner {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .carossel-inner img {
     width: 100%;
-    height: 400px;
-
+    height: 100%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .carossel-control {
     position: absolute;
     top: 50%;
-
     transform: translateY(-50%);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-
-    z-index: 1;
-
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.carossel-control.prev {
-    left: 0;
-}
-
-.carossel-control.next {
-    right: 0;
-}
-
-.carossel-indicators {
-    display: flex;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-
-    transform: translateX(-50%);
-    gap: 10px;
-}
-
-.carossel-indicator {
-    width: 10px;
-    height: 10px;
-
+    background: rgba(15, 23, 42, 0.4);
+    color: white;
+    padding: 1rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s;
-
-    background-color: #fff;
+    margin: 0 20px;
+    backdrop-filter: blur(4px);
+    transition: var(--transition);
 }
 
-.carossel-indicator.active {
-    background-color: #9acd32;
-}
+.carossel-control:hover { background: var(--color-primary); }
+.carossel-control.prev { left: 0; }
+.carossel-control.next { right: 0; }
 
-/* CARDS DE SERVIÇOS */
-.text-services {
-    width: 100%;
-    height: 55px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #eee;
-}
-
-.text-services h1 {
-    font-size: 24px;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-weight: bolder;
-}
-
-.cards-services {
-    height: 200px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    background-color: #eee;
-}
-
-.card {
-    width: 250px;
-    height: 120px;
-    padding: 20px;
+/* CABEÇALHOS DE SECÇÃO */
+.section-header {
     text-align: center;
-
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-    background-color: #fff;
+    margin-bottom: 3rem;
+    padding: 0 20px;
 }
 
-.card h3 {
-    margin-bottom: 10px;
-    color: #333;
-    
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-weight: bolder;
+.section-header h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
-.card p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+.section-header p {
+    color: var(--color-text-light);
+    font-size: 1.1rem;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
+/* CARDS SERVIÇOS */
+.services-section { max-width: 1200px; margin: 0 auto; width: 100%; }
 
-    color: #fff;
-
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-
-    text-transform: uppercase;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-weight: bolder;
-
-    background-color: #9acd32;
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 20px;
 }
 
-.btn:hover {
-    background-color: #689411;
-}
-
-/* Contêiner principal */
-.container-others {
-    width: 100%;
-    height: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Quadro de Aniversariantes */
-.birthday-board {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-
-    position: relative;
-    overflow: hidden;
-
-    margin: 20px 40px 0px 40px;
-    padding: 20px;
-
-    background: #eee;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.modern-card {
+    background: var(--color-surface);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
     text-align: center;
-    border: 2px solid #9acd32;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-secondary);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.modern-card h3 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.modern-card p {
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
     flex-grow: 1;
 }
 
-/* Cabeçalho com o gradiente verde */
-.birthday-header {
-    background: linear-gradient(90deg, #9acd32, #689411);
-
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-
-    color: #ffffff;
-    font-size: 1.2em;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-weight: bold;
+/* BOTÕES */
+.btn-primary, .btn-outline {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    transition: var(--transition);
 }
 
-/* Lista de Aniversariantes */
-.birthday-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    color: #333;
-    font-size: 1em;
-    line-height: 1.8;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-weight: bolder;
+.btn-primary {
+    background: var(--color-secondary);
+    color: white;
 }
+
+.btn-primary:hover { background: var(--color-secondary-hover); }
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn-outline:hover {
+    background: var(--color-secondary);
+    color: white;
+}
+
+/* INFORMAÇÕES E MAPA */
+.info-section {
+    background: var(--color-surface);
+    padding: 4rem 20px;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.info-text p {
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+}
+
+.info-map iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* QUADROS INFORMATIVOS */
+.board-section { max-width: 1200px; margin: 0 auto; width: 100%; }
+
+.board-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 0 20px;
+}
+
+.birthday-widget {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.widget-header {
+    background: var(--color-primary);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.widget-header h3 { font-weight: 600; }
+
+.birthday-list { padding: 1.5rem; list-style: none; }
 
 .birthday-list li {
-    margin: 5px 0;
-    font-size: 1.1em;
-}
-
-.birthday-list strong {
-    color: #689411;
-}
-
-/* Carrossel de Gestão */
-.carrossel-container {
-    width: 100%;
-    max-width: 600px;
-
-    overflow: hidden;
-    margin-top: 20px;
-
-    position: relative;
-
     display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    flex-grow: 1;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-bg);
+}
+
+.birthday-list li:last-child { border: none; }
+
+.birthday-list .date {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.birthday-list .name { font-weight: 500; }
+
+.gallery-widget {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-md);
+    height: 100%;
+    min-height: 350px;
 }
 
 .carrossel-gestao {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 0;
+    height: 100%;
+    transition: transform 0.5s ease;
 }
 
 .carrossel-gestao img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
-/* Botões de Navegação */
-button {
+.nav-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px;
-    font-size: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 50%;
     cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    transition: var(--transition);
 }
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
+.nav-btn:hover { background: white; }
+.nav-btn.prev { left: 0; }
+.nav-btn.next { right: 0; }
 
-button.prev {
-    left: 0px;
-}
-
-button.next {
-    right: 0px;
-}
-
-
-/* MAIS INFO */
-.text-info {
-    width: 100%;
-    height: 8vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #ffffff;
-}
-
-.text-info h1 {
-    font-size: 24px;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-weight: bolder;
-}
-
-.container {
-    width: 100%;
-    height: auto;
-
-    display: flex;
-    
-    overflow: hidden;
-}
-
-.card-info {
-    width: 150vw;
-    height: 300px;
-    margin: 0 40px;
-
-    box-sizing: border-box;
-    border-radius: 10px;
-    position: relative;
-
-    overflow: hidden;
-}
-
-.card-info iframe {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    border: 0;
-}
-
-.content {
-    padding: 20px;
-    box-sizing: border-box;
-    flex-grow: 1;
-}
-
-.content h2 {
-    font-size: 24px;
-
-    margin-left: 40px;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-weight: bolder;
-}
-
-.content p {
-    margin-top: 10px;
-    padding: 0px 40px 10px 40px;
-
-    font-size: 16px;
-    text-align: justify;
-
-    line-height: 1.25;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-}
-
-/* RESPONSIVIDADE - MOBILE*/
-@media (max-width: 999px) {
-    .nav-list {
-        display: none;
-    }
-
-    .container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card-info {
-        height: 300px;
-        width: 80%;
-    }
-
-    .container-others {
-        justify-content: space-between;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Ajuste do Quadro de Aniversariantes */
-    .birthday-board {
-        max-width: 450px;
-        margin: 10px 20px;
-    }
-
-    /* Ajuste do Carrossel */
-    .carrossel-container {
-        max-width: 550px;
-    }
-}
-
-@media (max-width: 659px) {
-    .carossel {
-        height: auto;
-    }
-
-    .carossel-inner img {
-        height: 200px;
-
-        object-fit: fit;
-    }
-
-    .cards-services {
-        height: 360px;
-        gap: 20px;
-
-        flex-direction: column;
-    }
-    
-    .container {
-        height: auto;
-    }
-
-    .card {
-        width: 300px;
-        height: 120px;
-    }
-
-    .card-info {
-        height: 200px;
-    }
-
-    .content p {
-        padding: 0px 20px 10px 20px;
-    }
-
-    .content h2 {
-        margin-left: 20px;
-    }
-
-    .container-others {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .birthday-board {
-        width: auto;
-        margin: 10px 20px;
-        padding: 15px;
-    }
-
-    .carrossel-container {
-        margin-top: 15px;
-
-        width: auto;
-        margin: 10px 20px;
-    }
-
-    .carrossel-gestao img {
-        height: 290px;
-    }
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .info-container, .board-grid { grid-template-columns: 1fr; }
+    .hero-section { height: 350px; }
+    .gallery-widget { height: 300px; }
 }

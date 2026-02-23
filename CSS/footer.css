@@ -1,165 +1,94 @@
-/* footer {
-    width: 100%;
-    
-    background-color: #9acd32;
-    text-align: center;
-
+.main-footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4rem 20px 0 20px;
+    margin-top: 4rem;
 }
 
-footer a {
-    text-decoration: none;
-    color: #588105;
-
-    font-weight: bolder;
-}
-
-footer p {
-    color: #fff;
-    
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-    flex-wrap: wrap;
-
-    width: 100%;
-    padding: 1rem 0;
-    margin-top: 20px;
-
-    background-color: #9acd32;
-}
-
-.footer-column {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.footer-column h2 {
-    font-size: 18px;
-    margin-top: 0;
-    font-weight: bold;
-}
-
-.footer-column p, .footer-column a {
-    font-size: 14px;
-    color: #fff;
-    margin: 5px 0;
-    text-decoration: none;
-}
-
-.footer-column a {
-    color: #9acd32;
-}
-
-.footer-column a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 12px;
-}
-
-.footer-bottom p {
-    margin: 5px 0;
-} */
-
-footer {
-    background-color: #9acd32;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-
-    margin-top: 20px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
+.footer-grid {
+    max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
-.footer-column {
-    flex: 1;
-    margin: 0 10px;
+.footer-logo {
+    height: 50px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1); /* Torna o logo branco se for escuro */
 }
 
-.footer-column h2 {
-    font-size: 18px;
-    margin-top: 0;
-
-    font-weight: bold;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+.footer-info p, .footer-contact p {
+    color: #94a3b8; /* Cinza azulado claro */
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
-.footer-column p, .footer-column a {
-    color: #fff;
-
-    font-size: 14px;
-    margin: 5px 0;
-    text-decoration: none;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+.footer-contact h3, .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 600;
 }
 
-.footer-column a {
-    color: #fff;
-
-    transition: 0.2s;
-}
-
-.footer-column a:hover {
-    color: #3c5903;
-
-    text-decoration: underline;
-    transition: 0.2s;
-}
-
-.social-icons {
+.footer-contact p {
     display: flex;
-    justify-content: center; /* Centraliza os ícones dentro da coluna */
-    gap: 10px;
-    margin-top: 10px;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.social-icons a {
-    display: inline-block;
+.footer-contact .material-symbols-outlined {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
 }
 
-.social-icons img {
+.footer-links a {
+    display: block;
+    color: #94a3b8;
+    margin-bottom: 0.8rem;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links img {
     width: 24px;
     height: 24px;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.social-links img:hover {
+    opacity: 1;
+    transform: translateY(-3px);
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: #020617; /* Slate mais escuro ainda */
+    padding: 1.5rem 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0 -20px;
 }
 
-.footer-bottom p {
-    margin: 5px 0;
+.dev-credits a {
+    color: var(--color-secondary);
+    font-weight: 600;
 }
 
-.footer-bottom a {
-    color: #3c5903;
-
-    font-weight: bolder;
-    text-decoration: none;
+.dev-credits a:hover {
+    text-decoration: underline;
 }
