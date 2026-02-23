@@ -1,10 +1,10 @@
 .main-header {
-    background-color: var(--color-surface);
+    background-color: #003366; 
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: var(--shadow-sm);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: none; 
 }
 
 .main-menu {
@@ -20,6 +20,7 @@
 .image-logo {
     height: 60px;
     transition: var(--transition);
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));
 }
 
 .image-logo:hover {
@@ -33,7 +34,7 @@
 }
 
 .link-nav {
-    color: var(--color-text);
+    color: var(--color-surface);
     font-weight: 500;
     font-size: 0.95rem;
     transition: var(--transition);
@@ -48,12 +49,12 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--color-secondary);
+    background-color: #a2d94c; 
     transition: var(--transition);
 }
 
 .link-nav:hover {
-    color: var(--color-secondary);
+    color: #a2d94c;
 }
 
 .link-nav:hover::after, .link-nav.active::after {
@@ -61,7 +62,7 @@
 }
 
 .link-nav.active {
-    color: var(--color-secondary);
+    color: #a2d94c;
 }
 
 /* MOBILE MENU */
@@ -85,22 +86,27 @@
         display: block;
     }
 
+    .mobile-menu div {
+        background-color: #ffffff;
+    }
+
     .nav-list {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -100%; /* Escondido por padrão */
         width: 100vw;
         height: 100vh;
-        background-color: var(--color-surface);
+        background-color: #003366;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
         transition: right 0.4s ease-in-out;
+        z-index: 1000;
     }
 
     .nav-list.active {
-        right: 0;
+        right: 0; /* Mostra o menu quando a classe 'active' é disparada pelo JS */
     }
 
     .link-nav {
